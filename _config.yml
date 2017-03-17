@@ -1,0 +1,6 @@
+title: Innovation Guides
+url: "http://guides.austintexas.io" # the base hostname & protocol for your site
+
+theme: jekyll-theme-zilker
+
+permalink: pretty
