@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Innovation Guides | Git Workflow</title>
+  <meta property="og:title" content="Innovation Guides | Git Workflow" />
+
+
+
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+
+
+  <link rel="canonical" href="http://guides.austintexas.io/developer-guide/git/" />
+
+  <link rel="stylesheet" href="/assets/vendor/uswds-0.12.1/css/uswds.min.css">
+</head>
+
+
+  <body class="git-workflow">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<div class="usa-disclaimer">
+  <div class="usa-grid">
+    <div class="usa-disclaimer-official">
+      <p>An official website of the City of Austin.</p>
+    </div>
+  </div>
+</div>
+
+<header class="usa-header" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <button class="usa-menu-btn">Menu</button>
+      <div class="usa-logo" id="logo">
+        <em class="usa-logo-text">
+          <a href="/" accesskey="1" title="Home" aria-label="Home">Innovation Guides</a>
+        </em>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+
+    <div class="usa-grid">
+      
+        
+        
+
+        <div class="usa-width-one-whole">
+          <h1>Developer Guide</h1>
+        </div>
+
+        <aside class="usa-width-one-fourth">
+          
+          
+
+
+
+
+  
+  <ul class="
+    usa-sidenav-list
+  "><li>
+      <a href="/developer-guide/">
+        Developer Guide
+      </a>
+    </li>
+  
+
+  
+    
+    
+
+    
+      <li>
+        <a href="/developer-guide/git/" class="usa-current">Git Workflow</a>
+        
+
+
+
+
+  
+  <ul class="
+    usa-sidenav-sub_list
+  "><li>
+        <a href="/developer-guide/git/configuration/">Configuration</a>
+        
+
+
+
+
+
+      </li>
+    
+  
+    
+    
+
+    
+      <li>
+        <a href="/developer-guide/git/protips/">ProTips</a>
+        
+
+
+
+
+
+      </li></ul>
+
+
+      </li></ul>
+
+
+        </aside>
+      
+
+      <main id="main-content" class="usa-width-three-fourths usa-content">
+        <h2 id="git-and-github">Git and GitHub</h2>
+
+<p>Developers contributing to the City’s projects on GitHub should be familiar with (or plan on learning about) Git, GitHub, and the concepts of distributed version control.</p>
+
+<p>If you’re new to these tools, that’s okay—it’s cool to ask questions—but please also invest some time learning about them. We recommend starting with GitHub’s list of <a href="https://help.github.com/articles/good-resources-for-learning-git-and-github/">Good Resources for Learning Git and GitHub</a> and the free book <a href="https://git-scm.com/book/en/v2/">Pro Git</a>.</p>
+
+<ul>
+  <li><a href="https://gdstechnology.blog.gov.uk/2014/01/27/how-we-use-github/">“How GDS uses Git and GitHub” from the UK Government Digital Service</a></li>
+  <li><a href="https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/">“Coding in the open” from the UK Government Digital Service</a></li>
+</ul>
+
+<h3 id="using-branches-and-pull-requests">Using branches and pull requests</h3>
+
+<p>Most teams and projects should use <a href="https://guides.github.com/introduction/flow/">the branch-based workflow recommended by GitHub</a>, including pull requests and code review. Consider using GitHub’s features to <a href="https://github.com/blog/2051-protected-branches-and-required-status-checks">protect the master branch, require status checks, and require reviews</a>.</p>
+
+<p>One caveat: GitHub suggests deploying production before merging pull requests, but if your project’s deployment environment has other staging and rollback features, or automates deploys of <code class="highlighter-rouge">master</code>, it’s typically fine to merge first.</p>
+
+<p>Name branches using whole words separated by hyphens.</p>
+
+<ul>
+  <li><a href="https://guides.github.com/introduction/flow/">“Understanding the GitHub Flow” from GitHub</a></li>
+  <li><a href="https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project">“GitHub - Contributing to a Project” from Pro Git</a></li>
+  <li><a href="https://help.github.com/articles/about-protected-branches/">“About protected branches” from GitHub</a></li>
+  <li><a href="https://help.github.com/articles/about-required-status-checks/">“About required status checks” from GitHub</a></li>
+  <li><a href="https://help.github.com/articles/approving-a-pull-request-with-required-reviews/">“Approving a pull request with required reviews” from GitHub</a></li>
+</ul>
+
+<h3 id="writing-commit-messages">Writing commit messages</h3>
+
+<p>You should think of writing a commit message as telling a story about a change to a colleague sitting next to you. The commit diff shows <em>what</em> changed, but not why: your message explains the why. The people who might read it include the teammates who review your code, developers who join the team or contribute to the project in the future, members of the public who may be interested in our work, and even yourself in the future.</p>
+
+<p>If this style of commit message is new to you, you might find it helpful to review these resources:</p>
+
+<ul>
+  <li><a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">“A Note About Git Commit Messages” by Tim Pope</a></li>
+  <li><a href="http://rakeroutes.com/blog/deliberate-git/">“Deliberate Git” by Stephen Ball</a></li>
+  <li><a href="http://mislav.net/2014/02/hidden-documentation/">“Hidden Documentation” by Mislav Marohnić</a></li>
+</ul>
+
+<p>These expectations apply at every stage of a project:</p>
+
+<ul>
+  <li>
+    <p><strong>Write the commit subject as a present tense command.</strong> This style matches Git’s own, but more importantly, it helps you think about commits as actions applied to the repository, which makes them easier to reason about them when merging and rebasing.</p>
+
+    <ul>
+      <li>Capitalize the first word</li>
+      <li>Punctuate sparingly</li>
+      <li>Limit the subject line to 70 characters</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Use the commit body to explain why.</strong> The body doesn’t have to be formal or present tense. Answer these questions: Why is this change necessary? How does it address the issue?  What side effects does it have? What alternatives did you consider?</p>
+
+    <ul>
+      <li>Include a blank line between the subject and body</li>
+      <li>Use proper spelling and punctuation</li>
+      <li>Wrap lines at about 70 characters</li>
+    </ul>
+
+    <p>Use GitHub to link issues, other issue trackers</p>
+  </li>
+</ul>
+
+<h3 id="cleaning-up-commits">Cleaning up commits</h3>
+
+<p>You don’t have to write a detailed commit message every time you call <code class="highlighter-rouge">git commit</code>. Most of the time, your first pass at a commit message might be a quick note to self, or even just “WIP” (work-in-progress).</p>
+
+<p>That’s encouraged. Writing good commit messages doesn’t need to take you out of your coding flow. Instead, think of your WIP commits as rough drafts you’ll return to later.</p>
+
+<p>While you’re working, it’s a good idea to create small commits frequently, because it’s easier to combine, reorder, and remove small commits than to split big commits. If necessary, <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files">selectively stage files</a> before committing.</p>
+
+<p>When you’re ready, you can write, edit, and structure your commits using git’s tools for rewriting history, <code class="highlighter-rouge">git commit --amend</code> and <code class="highlighter-rouge">git rebase --interactive</code>. If you’re learning about these tools for the first time, start with <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">Chapter 7 of Pro Git</a>.</p>
+
+<p>Rewrite your WIP commits before you push your branch and open a pull request. Each pushed commit should represent a logical change: if you did some tangential refactoring, for example, keep that in a separate commit.</p>
+
+<ul>
+  <li><a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">“Git Tools - Rewriting History” from Pro Git</a></li>
+  <li><a href="https://help.github.com/articles/about-git-rebase/">“About Git rebase” from GitHub</a></li>
+</ul>
+
+<h3 id="rewriting-commits-after-youve-pushed">Rewriting commits after you’ve pushed</h3>
+
+<p>If you’ve already pushed a branch before you rewrite its history, <code class="highlighter-rouge">git push</code> will refuse to overwrite the remote copy with the new history. Forcing the overwrite is called a force push.</p>
+
+<p>Force pushing runs the risk of overwriting someone else’s commits, but you can mitigate this in two ways:</p>
+
+<ul>
+  <li>
+    <p><strong>Communicate with your teammates.</strong> If you might not be the only person working on a branch, talk to each other before rewriting commits.</p>
+  </li>
+  <li>
+    <p><strong>Use <code class="highlighter-rouge">--force-with-lease</code> instead of <code class="highlighter-rouge">--force</code>.</strong> The “with lease” option tells Git to check if the remote branch has changed since you last pulled. If it has, that’s a good sign that you may be overwriting someone else’s work.</p>
+  </li>
+</ul>
+
+<p>If you’re working from a local copy of a branch when it’s force pushed by someone else, you can usually replay your local commits on top of the new history with <code class="highlighter-rouge">git pull --rebase</code>.</p>
+
+<ul>
+  <li>
+    <p><a href="#">“–force considered harmful; understanding git’s –force-with-lease” from the Atlassian Developers blog</a></p>
+  </li>
+  <li>
+    <p><a href="https://git-scm.com/docs/git-rebase#_recovering_from_upstream_rebase">“Recovering from Upstream Rebase” from Git Reference</a></p>
+  </li>
+</ul>
+
+<h3 id="merging-pull-requests">Merging pull requests</h3>
+
+<p>While your branch is under review in a pull request, push changes you make in response to feedback as new commits on the same branch. The new commits will be added to the pull request, so reviewers will be able to see any changes that were based on their comments.</p>
+
+<p>Once the pull request is approved, rewrite the history again to combine new commits with the originals, and force push the new history before merging. Delete the remote branch from GitHub after it’s merged.</p>
+
+
+
+      </main>
+    </div>
+
+    <footer>
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <p><a href="/edit/master/_developer-guide/git.md">Edit this page</a></p>
+    </div>
+</footer>
+
+
+
+    <script src="/assets/vendor/uswds-0.12.1/js/uswds.min.js"></script>
+  </body>
+
+</html>
