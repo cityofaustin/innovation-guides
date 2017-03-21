@@ -1,18 +1,21 @@
+---
 title: Innovation Guides
-url: "http://guides.austintexas.io" # the base hostname & protocol for your site
-
-theme: jekyll-theme-zilker
-
-permalink: pretty
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-
+timezone: UTC
 collections:
   developer-guide:
     title: Developer Guide
     output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: page
+url: http://guides.austintexas.io
+theme: jekyll-theme-zilker
+permalink: pretty
