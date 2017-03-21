@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/cityofaustin/zilker-theme.git
-  revision: 22b0f83db0479344ab7bfd89bbb5599120fbbdaa
-  tag: v0.0.1
+  revision: 6ddf65eca5ebadbd26247b13fcf11eac5ad350ec
+  tag: v0.0.2
   specs:
-    jekyll-theme-zilker (0.0.1)
+    jekyll-theme-zilker (0.0.2)
       jekyll (~> 3.4)
 
 GEM

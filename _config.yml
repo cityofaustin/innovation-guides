@@ -4,3 +4,15 @@ url: "http://guides.austintexas.io" # the base hostname & protocol for your site
 theme: jekyll-theme-zilker
 
 permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+
+collections:
+  developer-guide:
+    title: Developer Guide
+    output: true
