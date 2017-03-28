@@ -5,6 +5,9 @@ collections:
   developer-guide:
     title: Developer Guide
     output: true
+  github-pages:
+    title: GitHub Pages
+    output: true
   posts:
     title: Posts
     output: true
