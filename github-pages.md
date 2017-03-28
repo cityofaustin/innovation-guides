@@ -1,7 +1,6 @@
 ---
 title: GitHub Pages
 date: 2017-03-28 19:21:00 Z
-published: false
 collection: github-pages
 ---
 
