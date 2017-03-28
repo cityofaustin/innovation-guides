@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Innovation Guides | Editing Content</title>
+  <meta property="og:title" content="Innovation Guides | Editing Content">
+
+
+
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+
+
+  <link rel="canonical" href="http://guides.austintexas.io/github-pages/editing-content/">
+
+  <link rel="stylesheet" href="/assets/vendor/uswds-0.12.1/css/uswds.min.css">
+</head>
+
+
+  <body class="editing-content">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<div class="usa-disclaimer">
+  <div class="usa-grid">
+    <div class="usa-disclaimer-official">
+      <p>An official website of the City of Austin.</p>
+    </div>
+  </div>
+</div>
+
+<header class="usa-header" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <button class="usa-menu-btn">Menu</button>
+      <div class="usa-logo" id="logo">
+        <em class="usa-logo-text">
+          <a href="/" accesskey="1" title="Home" aria-label="Home">Innovation Guides</a>
+        </em>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+
+    <div class="usa-grid">
+      
+        
+        
+
+        <div class="usa-width-one-whole">
+          <h1>GitHub Pages</h1>
+        </div>
+
+        <aside class="usa-width-one-fourth">
+          
+          
+
+
+
+
+  
+  <ul class="
+    usa-sidenav-list
+  ">
+<li>
+      <a href="/github-pages/">
+        GitHub Pages
+      </a>
+    </li>
+  
+
+  
+    
+    
+
+    
+      <li>
+        <a href="/github-pages/editing-content/" class="usa-current">Editing Content</a>
+        
+
+
+
+
+
+      </li>
+    
+  
+    
+    
+
+    
+      <li>
+        <a href="/github-pages/jekyll-editors/">Jekyll Editors</a>
+        
+
+
+
+
+
+      </li>
+</ul>
+
+
+        </aside>
+      
+
+      <main id="main-content" class="usa-width-three-fourths usa-content">
+        <p>This page includes very general guidelines for editing the content of GitHub Pages site, agnostic of the <a href="/github-pages/editors/">Jekyll editor</a> you might be using. Your project’s README and your editor’s documentation may include more specific information.</p>
+
+<h3 id="pencil2-learning-markdown">
+<img class="emoji" title=":pencil2:" alt=":pencil2:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270f.png" height="20" width="20" align="absmiddle"> Learning Markdown</h3>
+
+<p>Markdown is the syntax Jekyll uses to add text formatting, links, and images to plain text files, which typically have the extension <code class="highlighter-rouge">.md</code> to indicate that they’re Markdown files.</p>
+
+<ol>
+  <li>
+<a href="https://guides.github.com/features/mastering-markdown/">GitHub’s guide to Mastering Markdown</a> is a great place to get started if you’re new to Markdown.</li>
+  <li>
+<a href="https://daringfireball.net/projects/markdown/">The official Markdown documentation</a> includes a full reference of all of the standard features.</li>
+  <li>Advanced users might also be interested in the non-standard features supported by GitHub Pages, including emoji, syntax highlighting, and footnotes, which are part of <a href="https://help.github.com/articles/about-writing-and-formatting-on-github/">GitHub Flavored Markdown</a> and <a href="https://kramdown.gettalong.org/quickref.html">Kramdown</a>.</li>
+</ol>
+
+<p>If you have a Google or Microsoft Word document that you want to publish on GitHub Pages, check out Ben Balter’s <a href="http://word-to-markdown.herokuapp.com">Word to Markdown Converter</a>.</p>
+
+<h3 id="memo-adding-pages">
+<img class="emoji" title=":memo:" alt=":memo:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20" align="absmiddle"> Adding Pages</h3>
+
+<p>A very simple GitHub Pages site might only have one page, which is usually saved as <code class="highlighter-rouge">index.md</code> in the root directory of the repository. This is the home page.</p>
+
+<p>To add more pages, simply save new files with an <code class="highlighter-rouge">.md</code> extension. By default, the URL of the published web page will match where you save the file, so a file named <code class="highlighter-rouge">team.md</code> saved in an <code class="highlighter-rouge">about-us/</code> folder will be published as <code class="highlighter-rouge">/about-us/team.html</code>.</p>
+
+<p>Each <code class="highlighter-rouge">.md</code> file must start with a title between lines of three hyphens. For example:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>---
+title: About Us
+---
+
+This the **Markdown** content of the About Us page.
+</code></pre>
+</div>
+
+<p>That’s all you need to know to get started, but it only scratches the surface of what Jekyll can do. For more information, refer to the <a href="https://jekyllrb.com/docs/home/">Jekyll docs</a>.</p>
+
+<ul>
+  <li><a href="https://jekyllrb.com/docs/pages/">“Creating pages” from Jekyll</a></li>
+</ul>
+
+<h3 id="camera-adding-images">
+<img class="emoji" title=":camera:" alt=":camera:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" height="20" width="20" align="absmiddle"> Adding Images</h3>
+
+<p>Images added directly to a GitHub Pages repository can be referenced from Markdown files using their file path. For example, an image saved to <code class="highlighter-rouge">images/project.jpg</code> can be added to a Markdown page with <code class="highlighter-rouge">![Project Image](/images/project.jpg)</code>.</p>
+
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle"> <strong>IMPORTANT: Please resize photographs before you upload them!</strong> Most images downloaded directly from a camera should be downsized so that the file is no larger than 500 kilobytes. The image files you add will be downloaded in full when someone visits your site on a cellular connection, so be kind and resize!</p>
+
+<p>You can also reference images hosted at another URL, or embed video and other media by copying and pasting the HTML embed code from sites such as from YouTube or SlideShare.</p>
+
+<ul>
+  <li><a href="https://jekyllrb.com/docs/posts/#including-images-and-resources">“Including images and resources” from Jekyll</a></li>
+</ul>
+
+
+      </main>
+    </div>
+
+    <footer>
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <p><a href="/edit/master/_github-pages/editing-content.md">Edit this page</a></p>
+    </div>
+
+
+
+
+    <script src="/assets/vendor/uswds-0.12.1/js/uswds.min.js"></script>
+  </div></footer>
+</body>
+
+</html>
