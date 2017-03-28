@@ -1,7 +1,6 @@
 ---
 title: Editing Content
 date: 2017-03-28 19:24:00 Z
-published: false
 ---
 
 This page includes very general guidelines for editing the content of GitHub Pages site, agnostic of the [Jekyll editor](/github-pages/editors/) you might be using. Your project's README and your editor's documentation may include more specific information.
